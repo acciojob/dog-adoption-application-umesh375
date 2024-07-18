@@ -5,23 +5,24 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+<title>Dog Adoption Application</title>
 <body>
+	<h2>Dog Adoption Application</h2>
 	<form action="submit" method="post">
 		<label for="name">Name</label>
-		<input Placeholder="Name" type="text" id="name">
+		<input type="text" id="name" name="name" placeholder="name" required>
 		
-		<label for="Phone Number">phone</label>
-		<input Placeholder="Phone Number" type="text" id="phone">
-		
+		<label for="phone">Phone Number</label>
+		<input type="tel" id="phone" name="phone" placeholder="phone number" required>
+
 		<label for="address">Address</label>
-		<input Placeholder="Address" type="text" id="Address" value="Address">
+		<input type="text" id="address" name="address" placeholder="address" required>
+
+		<label for="lived with a Dog">Have you ever lived with a Dog before?</label>
+		<input type="checkbox" id="lived with a Dog" name="lived with a Dog" value="lived with a Dog" required>
 		
-		<label for="checkbox">Have you ever lived with a Dog before?</label>
-		<input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before">
-		
-		<label for="breeds">Please select your preferred breeds</label>
-		<select id="breeds" name="breeds" multiple required>
+		<label for="preferred breeds">Please select your preferred breeds</label>
+		<select id="preferred breeds" name="preferred breeds" multiple required>
 			<option>Labrador Retriever</option>
 			<option>German Shepherd</option>
 			<option>Bulldog</option>
